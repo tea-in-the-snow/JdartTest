@@ -1,0 +1,40 @@
+############################################################################### 
+#
+# default jdart tools
+#
+shell=gov.nasa.jpf.jdart.JDart
+symbolic.dp=z3
+symbolic.dp.z3.bitvectors=true
+
+############################################################################### 
+#
+# logging and jpf output
+#
+log.finest=jdart
+log.info=constraints
+
+# suppress jpf output
+report.console.start=
+report.console.finished=
+report.console.property_violation=
+
+jdart.configs.all_fields_symbolic.symbolic.include=this.*
+
+
+target=Input
+# classpath=/home/shaoran/jdart/test/build:/home/shaoran/jdart/commons-lang-3.18.0/target/commons-lang3-3.18.0.jar
+# classpath=/home/shaoran/jdart/jdartTest/build
+classpath=/home/shaoran/jdart/jdartTest/build:/home/shaoran/jdart/commons-lang-3.18.0/target/commons-lang3-3.18.0.jar
+
+# 入口类
+shell=gov.nasa.jpf.jdart.JDart
+
+# 指定测试方法
+# jdart.test.method=isBlank(Ljava/lang/CharSequence;)Z
+# jdart.test.method=test([II)Z
+concolic.method=test
+concolic.method.test=Input.test(arr:int[], val:int)
+concolic.method.test.config=test
+
+# 限制探索深度，避免路径爆炸
+search.depth_limit=50

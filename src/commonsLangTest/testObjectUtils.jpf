@@ -1,0 +1,8 @@
+@include=./commons-lang3.jpf
+
+target=commonsLangTest.TestObjectUtils
+
+concolic.method.test=commonsLangTest.TestObjectUtils.test(a:int)
+concolic.method.test.config=test
+
+concolic.method=test

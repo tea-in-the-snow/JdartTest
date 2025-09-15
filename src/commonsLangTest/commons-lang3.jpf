@@ -1,0 +1,3 @@
+@include=../jdart.jpf
+
+classpath=/home/shaoran/jdart/jdartTest/build:/home/shaoran/jdart/commons-lang-3.18.0/target/commons-lang3-3.18.0.jar
