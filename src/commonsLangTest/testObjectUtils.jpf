@@ -5,4 +5,11 @@ target=commonsLangTest.TestObjectUtils
 concolic.method.test=commonsLangTest.TestObjectUtils.test(a:int)
 concolic.method.test.config=test
 
-concolic.method=test
+concolic.method.testGetIfNull=commonsLangTest.TestObjectUtils.testGetIfNull(obj:java.lang.Object,defaultObj:java.lang.Object)
+concolic.method.testGetIfNull.config=testGetIfNull
+
+concolic.method.testFirstNonNull=commonsLangTest.TestObjectUtils.testFirstNonNull(objects:java.lang.Object[])
+concolic.method.testFirstNonNull.config=testFirstNonNull
+
+# concolic.method=test
+# concolic.method=testGetIfNull
