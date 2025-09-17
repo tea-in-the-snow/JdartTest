@@ -1,0 +1,47 @@
+@include=./commons-lang3.jpf
+
+target=commonsLangTest.TestArrayUtils
+
+#
+# 2. ArrayUtils (10 个)
+#
+concolic.method.testIndexOf=commonsLangTest.TestArrayUtils.testIndexOf(array:java.lang.Object[],objectToFind:java.lang.Object)
+concolic.method.testIndexOf.config=testIndexOf
+
+concolic.method.testIndexOfWithStartIndex=commonsLangTest.TestArrayUtils.testIndexOfWithStartIndex(array:java.lang.Object[],objectToFind:java.lang.Object,startIndex:int)
+concolic.method.testIndexOfWithStartIndex.config=testIndexOfWithStartIndex
+
+concolic.method.testLastIndexOf=commonsLangTest.TestArrayUtils.testLastIndexOf(array:java.lang.Object[],objectToFind:java.lang.Object)
+concolic.method.testLastIndexOf.config=testLastIndexOf
+
+concolic.method.testContains=commonsLangTest.TestArrayUtils.testContains(array:java.lang.Object[],objectToFind:java.lang.Object)
+concolic.method.testContains.config=testContains
+
+concolic.method.testAdd=commonsLangTest.TestArrayUtils.testAdd(array:java.lang.Object[],element:java.lang.Object)
+concolic.method.testAdd.config=testAdd
+
+concolic.method.testAddAll=commonsLangTest.TestArrayUtils.testAddAll(array1:java.lang.Object[],array2:java.lang.Object[])
+concolic.method.testAddAll.config=testAddAll
+
+concolic.method.testRemoveElement=commonsLangTest.TestArrayUtils.testRemoveElement(array:java.lang.Object[],element:java.lang.Object)
+concolic.method.testRemoveElement.config=testRemoveElement
+
+concolic.method.testSubarray=commonsLangTest.TestArrayUtils.testSubarray(array:java.lang.Object[],startIndex:int,endIndex:int)
+concolic.method.testSubarray.config=testSubarray
+
+concolic.method.testIsSameLength=commonsLangTest.TestArrayUtils.testIsSameLength(array1:java.lang.Object[],array2:java.lang.Object[])
+concolic.method.testIsSameLength.config=testIsSameLength
+
+concolic.method.testContainsAll=commonsLangTest.TestArrayUtils.testContainsAll(array:java.lang.Object[],elements:java.lang.Object[])
+concolic.method.testContainsAll.config=testContainsAll
+
+concolic.method=testIndexOf
+# concolic.method=testIndexOfWithStartIndex
+# concolic.method=testLastIndexOf
+# concolic.method=testContains
+# concolic.method=testAdd  
+# concolic.method=testAddAll
+# concolic.method=testRemoveElement
+# concolic.method=testSubarray
+# concolic.method=testIsSameLength
+# concolic.method=testContainsAll

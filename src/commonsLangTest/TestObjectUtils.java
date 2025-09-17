@@ -18,6 +18,36 @@ public class TestObjectUtils {
         return ObjectUtils.firstNonNull(objects);
     }
 
+    public static boolean testNotEqual(Object object1, Object object2) {
+        return ObjectUtils.notEqual(object1, object2);
+    }
+    
+    public static String testToString(Object obj) {
+        return ObjectUtils.toString(obj);
+    }
+
+    public static Object testClone(Object obj) {
+        return ObjectUtils.clone(obj);
+    }
+    
+    public static Object testCloneIfPossible(Object obj) {
+        return ObjectUtils.cloneIfPossible(obj);
+    }
+    
+    public static String testIdentityToString(Object obj) {
+        StringBuilder sb = new StringBuilder();
+        ObjectUtils.identityToString(sb, obj);
+        return sb.toString();
+    }
+    
+    public static Object testMin(Comparable... values) {
+        return ObjectUtils.min(values);
+    }
+    
+    public static Object testMax(Comparable... values) {
+        return ObjectUtils.max(values);
+    }
+
     public static void main(String[] args) {
         // testGetIfNull(null, new Integer("26"));
         // test(0);

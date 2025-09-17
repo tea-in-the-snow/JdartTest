@@ -11,5 +11,43 @@ concolic.method.testGetIfNull.config=testGetIfNull
 concolic.method.testFirstNonNull=commonsLangTest.TestObjectUtils.testFirstNonNull(objects:java.lang.Object[])
 concolic.method.testFirstNonNull.config=testFirstNonNull
 
+concolic.method.testDefaultIfNull=commonsLangTest.TestObjectUtils.testDefaultIfNull(obj:java.lang.Object,defaultObj:java.lang.Object)
+concolic.method.testDefaultIfNull.config=testDefaultIfNull
+
+concolic.method.testNotEqual=commonsLangTest.TestObjectUtils.testNotEqual(object1:java.lang.Object,object2:java.lang.Object)
+concolic.method.testNotEqual.config=testNotEqual
+
+concolic.method.testToString=commonsLangTest.TestObjectUtils.testToString(obj:java.lang.Object)
+concolic.method.testToString.config=testToString
+
+concolic.method.testToStringWithDefault=commonsLangTest.TestObjectUtils.testToStringWithDefault(obj:java.lang.Object,defaultStr:java.lang.String)
+concolic.method.testToStringWithDefault.config=testToStringWithDefault
+
+concolic.method.testClone=commonsLangTest.TestObjectUtils.testClone(obj:java.lang.Object)
+concolic.method.testClone.config=testClone
+
+concolic.method.testCloneIfPossible=commonsLangTest.TestObjectUtils.testCloneIfPossible(obj:java.lang.Object)
+concolic.method.testCloneIfPossible.config=testCloneIfPossible
+
+concolic.method.testHashCode=commonsLangTest.TestObjectUtils.testHashCode(obj:java.lang.Object)
+concolic.method.testHashCode.config=testHashCode
+
+concolic.method.testHashCodeMulti=commonsLangTest.TestObjectUtils.testHashCodeMulti(objects:java.lang.Object[])
+concolic.method.testHashCodeMulti.config=testHashCodeMulti
+
+concolic.method.testIdentityToString=commonsLangTest.TestObjectUtils.testIdentityToString(obj:java.lang.Object)
+concolic.method.testIdentityToString.config=testIdentityToString
+
+concolic.method.testMin=commonsLangTest.TestObjectUtils.testMin(values:java.lang.Comparable[])
+concolic.method.testMin.config=testMin
+
+concolic.method.testMax=commonsLangTest.TestObjectUtils.testMax(values:java.lang.Comparable[])
+concolic.method.testMax.config=testMax
+
 # concolic.method=test
 # concolic.method=testGetIfNull
+concolic.method=testNotEqual
+# concolic.method=testFirstNonNull
+# concolic.method=testDefaultIfNull
+# concolic.method=testToString
+# concolic.method=testToStringWithDefault   

@@ -33,8 +33,11 @@ shell=gov.nasa.jpf.jdart.JDart
 # jdart.test.method=isBlank(Ljava/lang/CharSequence;)Z
 # jdart.test.method=test([II)Z
 concolic.method=test
-concolic.method.test=Input.test(arr:int[], val:int)
+concolic.method.test=Input.test(car:Car)
+jdart.configs.test.symbolic.include=car.*
+# concolic.method.test=Input.test(arr:int[], val:int)
 concolic.method.test.config=test
+
 
 # 限制探索深度，避免路径爆炸
 search.depth_limit=50
